@@ -1,0 +1,24 @@
+1. Time and submission
+The available time-span to complete this sample task is four hours - starting from when you received the materials for it.
+In order to submit, please create public repositories and push the code there. You can remove the repositories again after we evaluated them.
+When you finish the test or your time is up, please send us the link to the github repositories, alongside with a few screenshots of the end result. Use the same communication channel via which you received the task.
+Please try to write as many lines of code by yourself as you can - we want to see your coding skills.
+
+
+2. Files
+Alongside this text file, there are 2 projects, frontend-base-project (vue) and backend-base-project (laravel) and you should use them and build on top of them to save time.
+There's also an image that would give you an idea of what we want you to create. You have a free hand in design, but please first focus on making it functional.
+
+
+3. Sample task description
+Here is our actual sample task:
+Create a simple hotel room management web app. The app only has one user that is part of the hotel staff and called "admin". Therefore, authentication and authorization are not required. There are guests and rooms.
+Rooms have these details: "floor_number" (integer), "room_number" (integer), "capacity" (integer), and "status" (enum). The status can be "READY", "TAKEN", "MAINTENANCE".
+Guests have these details: "full_name" (string), age (integer)
+The admin can CRUD both guests and rooms.
+The admin can assign rooms to users.
+When a room is assigned to a user, the "status" of that room should become "TAKEN" and when a room is de-assgined from a user, the status should become "MAINTENANCE". There should be a button for each room labelled "Set as Ready" that will set the "status" of that room to "READY".
+Addition: Writing E2E and unit tests with playwright and vitest are a plus, but not necessarily required.
+
+
+Best of luck with the test.
