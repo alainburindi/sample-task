@@ -54,11 +54,6 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 
-interface Room {
-  id: number;
-  name: string;
-}
-
 export default defineComponent({
   emits: ['submit'],
   props: {

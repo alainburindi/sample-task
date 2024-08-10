@@ -32,17 +32,6 @@
 import { defineComponent, ref } from 'vue';
 import GuestForm from './GuestForm.vue';
 
-interface Room {
-  id: number;
-  name: string;
-}
-
-interface Guest {
-  id: number;
-  name: string;
-  room: string;
-}
-
 export default defineComponent({
   components: {
     GuestForm,

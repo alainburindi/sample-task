@@ -44,11 +44,11 @@ class RoomController extends Controller
             'capacity' => 'sometimes|required|integer',
             'status' => 'sometimes|required|in:READY,TAKEN,MAINTENANCE',
         ]);
-        
+
         if ($validator->fails()) {
             return response()->json($validator->errors(), 400);
         }
-        
+
         $validated = $validator->validated();
         $room->update($validated);
         return $room;
@@ -69,7 +69,7 @@ class RoomController extends Controller
     public function assignRoom(Request $request, Room $room)
     {
         $room->update(['status' => 'TAKEN']);
-        // Here you should also implement the logic to associate the room with a guest
+        // Here we can add the guest_id to the room
         return $room;
     }
 
